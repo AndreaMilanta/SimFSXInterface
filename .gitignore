@@ -1,8 +1,21 @@
 # VSC Workspace
 *.code-workspace
 
+# CMake
+CMakeFiles/
+CMakeCache.txt
+*.CMake
+
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
 # Build elements
-[Bb]uild/
+# [Bb]uild/
+*.dir
+*.obj
+*.tlog
 
 # Build output
 *.exe

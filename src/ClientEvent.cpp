@@ -83,6 +83,8 @@ void testClientEvents()
 
 int __cdecl _tmain(int argc, _TCHAR* argv[])
 {
+    int a = 0;
+    int b = a;
     printf("Hello World");
     testClientEvents();
 
