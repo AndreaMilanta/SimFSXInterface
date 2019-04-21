@@ -13,8 +13,8 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build",
             "environment": [],
-            // "externalConsole": true
-            "externalConsole": false
+            "externalConsole": true
+            // "externalConsole": false
         }
 
     ]
