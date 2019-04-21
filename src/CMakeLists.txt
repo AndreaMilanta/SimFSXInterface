@@ -8,7 +8,7 @@ add_executable(Cockpit ClientEvent.cpp)
 set(PUBLIC_LIBS "")
 # SimConnect
 add_library(SimConnect IMPORTED STATIC)
-set_target_properties(SimConnect PROPERTIES IMPORTED_LOCATION ${DEPS}/SimConnect.lib)
+set_target_properties(SimConnect PROPERTIES IMPORTED_LOCATION ${DEPS_DIR}/SimConnect.lib)
 set(PUBLIC_LIBS "${LIBRARIES}SimConnect")
 
 # Target link libraries

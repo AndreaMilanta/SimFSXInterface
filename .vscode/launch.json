@@ -5,15 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "CMake",
-            "type": "cppvsdbg",
+            "name": "LLDB",
+            "type": "lldb-mi",
             "request": "launch",
-            "program": "cmake",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true
+            "target": "./bin/Debug7Cockpit",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText"
         }
     ]
 }
