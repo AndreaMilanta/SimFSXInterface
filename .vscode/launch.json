@@ -5,12 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "LLDB",
-            "type": "lldb-mi",
+            "name": "Launch Debugger",
+            "type": "cppvsdbg",
             "request": "launch",
-            "target": "./../bin/Debug/Cockpit",
-            "cwd": "${workspaceRoot}/build",
-            "valuesFormatting": "parseText"
+            "program": "${workspaceFolder}/bin/Debug/Cockpit.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "environment": [],
+            // "externalConsole": true
+            "externalConsole": false
         }
+
     ]
 }
