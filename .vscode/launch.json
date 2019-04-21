@@ -8,8 +8,8 @@
             "name": "LLDB",
             "type": "lldb-mi",
             "request": "launch",
-            "target": "./bin/Debug7Cockpit",
-            "cwd": "${workspaceRoot}",
+            "target": "./../bin/Debug/Cockpit",
+            "cwd": "${workspaceRoot}/build",
             "valuesFormatting": "parseText"
         }
     ]
