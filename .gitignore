@@ -1,4 +1,5 @@
 # VSC Workspace
+ipch/
 *.code-workspace
 
 # CMake

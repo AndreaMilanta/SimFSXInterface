@@ -1,15 +1,14 @@
+# Minimum version requirements
+cmake_minimum_required(VERSION 3.14.2)
+
+# include directories
+include_directories(${SOURCE_DIR}/examples/Headers)
+
 # Source Directories
-# add_subdirectory(SOURCE)
+add_subdirectory(${SOURCE_DIR}/examples)
 
 # Main executables
-add_executable(Cockpit ClientEvent.cpp)
+add_executable(Cockpit main.cpp)
 
-# LIBRARIES
-set(PUBLIC_LIBS "")
-# SimConnect
-add_library(SimConnect IMPORTED STATIC)
-set_target_properties(SimConnect PROPERTIES IMPORTED_LOCATION ${DEPS_DIR}/SimConnect.lib)
-set(PUBLIC_LIBS "${LIBRARIES}SimConnect")
-
-# Target link libraries
-target_link_libraries(Cockpit ${PUBLIC_LIBS})
+# Add libraries
+target_link_libraries(Cockpit Examples)
